@@ -8,10 +8,10 @@ body {
 }
 .navbar {
     border-bottom: 2px solid;
-    border-color: rgb(107, 112, 25);
+    border-color: rgba(234, 216, 174, 0.904) ;  
     width: 100%;
     margin: auto;
-    color: rgb(107, 112, 25);
+    color: rgba(234, 216, 174, 0.904) ;  
 }
 
 .navbar a, .navbar .notation{
@@ -63,6 +63,8 @@ p {
 }
 .last {
     margin-bottom: 3rem;
+    border-bottom: 2px solid;
+    border-color: rgba(234, 216, 174, 0.904) ; 
 }
 #space {
     margin-top: 3rem;
@@ -71,24 +73,36 @@ p {
 .about .skills {
     text-align: left;
     padding-bottom: 0rem;  
+
 }
 .about span {
     font-size: x-large;
-    padding-right: 5px;
     font-family: "Roboto Mono", monospace;
     text-align: left;
-    text-decoration: underline;
+    font-family: "Borel", normal;
+}
+
+.about .styling {
+    color: brown;
 }
 
  ul{
     font-family: inherit;
     text-align: left;
     list-style: none;
+    border-bottom: 2px solid;
+    border-color: rgba(234, 216, 174, 0.904) ;  
+    padding-bottom: 20px;
+}
+
+.thingstolove {
+    padding-top: 0;
 }
 
 ul li {
     font-family: "Roboto Mono", monospace;
     font-weight: 500;
+    
 }
 
 .about a {

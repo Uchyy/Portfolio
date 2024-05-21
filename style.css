@@ -42,7 +42,7 @@ body {
 }
 .intro span {
     color: rgb(107, 112, 25);
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: left;
 }
 .intro-text {
@@ -53,7 +53,38 @@ body {
 
 .intro h2 {
     font-family: "Pacifico", cursive;
+    overflow: hidden; 
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-right-color: transparent }
+    50% { border-right-color: black; }
+  }
+
+  /* Add a new keyframe to hide the cursor after typing */
+@keyframes hide-cursor {
+    from { border-right: .15em solid rgb(127, 125, 122); }
+    to { border-right: none; }
+}
+
+/* Apply the hide-cursor animation after the typing animation */
+.intro h2 {
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite, 
+    hide-cursor 0.1s forwards 3.5s; /* Delay hide-cursor to start after typing is complete */
+}
+
 
 .intro h4 {
     font-size: small;
@@ -91,4 +122,43 @@ body {
 
 .navLinks img {
     height: 3rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+    }
+    #navbar {
+        position: fixed;
+        width: 90%;
+    }
+    section {
+        width: 50vw;
+        padding-top: 10rem;
+        height: 100%;
+    }
+
+    .navLinks a {
+        font-size: 5rem;
+    }
+    .intro h4 {
+        font-weight: normal;
+        font-size: larger;
+        font-family: "Borel", cursive;
+    }
+
+    intro h2{
+        padding-top: 7rem;
+    }
+
+    .intro h6 {
+        padding-top: 2rem;
+        font-weight: normal;
+        font-size: 2rem;
+        font-family: "Borel", cursive;
+    }
+
 }
