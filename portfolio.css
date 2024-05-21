@@ -6,6 +6,7 @@ body {
     padding: 2rem;
 }
 .navbar {
+    position: fixed;
     border-bottom: 2px solid;
     border-color: rgb(107, 112, 25);
     width: 100%;
@@ -46,6 +47,12 @@ span {
 
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .navLinks a {
     text-decoration: none;
     font-weight: normal;
@@ -68,4 +75,29 @@ span {
 
 .navLinks img {
     height: 3rem;
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3rem;
+        padding: 3rem;
+    }
+
+    section {
+        width: 50%;
+        height: 100%;
+        padding-top: 0;
+        padding: 3rem;
+        margin-left: 5rem;
+
+    }
+
+    .navLinks {
+        margin: auto;
+    }
+
+
 }
