@@ -112,6 +112,7 @@ p {
     border-bottom: 2px solid;
     border-color: rgba(234, 216, 174, 0.904) ;  
     padding-bottom: 20px;
+    padding: 1rem;
 }
 
 .thingstolove p  {
