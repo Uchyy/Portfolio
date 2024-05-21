@@ -23,6 +23,10 @@ body {
     padding: 5px;
 }
 
+.navbar a:hover {
+    color: rgba(97, 83, 49, 0.904) ;
+}
+
 .navbar .notation {
     letter-spacing: 5px;
 }
@@ -66,14 +70,29 @@ p {
     border-bottom: 2px solid;
     border-color: rgba(234, 216, 174, 0.904) ; 
 }
+
+.about #last-item, .links {
+    margin-bottom: 3rem;
+    display: block;
+    width: 100%;
+    transition: 2s;
+}
+
+.about #last-item:hover, .links:hover{
+    background-color:  rgba(149, 128, 80, 0.904) ; 
+
+}
 #space {
     margin-top: 3rem;
 }
 
 .about .skills {
-    text-align: left;
+    text-align: center;
     padding-bottom: 0rem;  
 
+}
+.about .title {
+    text-decoration: underline;
 }
 .about span {
     font-size: x-large;
@@ -95,8 +114,9 @@ p {
     padding-bottom: 20px;
 }
 
-.thingstolove {
+.thingstolove p  {
     padding-top: 0;
+    text-align: center;
 }
 
 ul li {
@@ -105,7 +125,7 @@ ul li {
     
 }
 
-.about a {
+.about  {
     margin-bottom: 5rem;
 
 }

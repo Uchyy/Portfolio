@@ -36,13 +36,13 @@ body {
 }
 
 .intro {
-    margin-top: 3rem;
+    margin-top: 4rem;
     height: auto;
     text-align: center;  
 }
 .intro span {
     color: rgb(107, 112, 25);
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
 }
 .intro-text {
@@ -96,7 +96,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 6rem;
 
 }
 
@@ -124,6 +124,10 @@ body {
     height: 3rem;
 }
 
+ul li:last-child {
+    padding-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
     body {
         display: flex;
@@ -139,10 +143,14 @@ body {
         width: 50vw;
         padding-top: 7rem;
         height: 100%;
+        margin-left: 3rem;
     }
 
     .navLinks a {
         font-size: 5rem;
+    }
+    .navLinks {
+        margin-left: 5rem;
     }
     .intro h4 {
         font-weight: normal;
@@ -150,8 +158,14 @@ body {
         font-family: "Borel", cursive;
     }
 
-    intro h2{
-        padding-top: 7rem;
+    .intro {
+        padding-top: 15rem;
+        margin-top: auto 0;
+        margin-left: 3rem;
+    }
+
+    .intro span{
+        font-size: 5rem;
     }
 
     .intro h6 {
