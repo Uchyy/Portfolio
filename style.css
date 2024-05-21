@@ -1,0 +1,94 @@
+body {
+    background-color: rgba(234, 216, 174, 0.904) !important;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid;
+    border-color: rgb(107, 112, 25);
+}
+
+.image-container {
+    display: inline-block;
+    width: 50%;
+
+}
+.image-container img {
+    height: 20px;
+    padding-right: 1rem;
+}
+
+.notation {
+    padding-top: 9px;
+    width: 50%;
+    text-align: right;
+    font-size: small;
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.intro {
+    margin-top: 3rem;
+    height: auto;
+    text-align: center;  
+}
+.intro span {
+    color: rgb(107, 112, 25);
+    font-size: 4rem;
+    text-align: left;
+}
+.intro-text {
+    font-weight: normal;
+    font-size: larger;
+    font-family: "Borel", cursive;
+}
+
+.intro h2 {
+    font-family: "Pacifico", cursive;
+}
+
+.intro h4 {
+    font-size: small;
+    padding-bottom: 30px;
+    font-weight: normal;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+    font-family: "Borel", normal;
+    font-size: 4rem;
+    padding-left: 1.5rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+}
+
+.navLinks a:hover {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.navLinks img {
+    height: 3rem;
+}

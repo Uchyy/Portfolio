@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+.navbar {
+    border-bottom: 2px solid;
+    border-color: rgb(107, 112, 25);
+    width: 100%;
+    margin: auto;
+    color: rgb(107, 112, 25);
+}
+
+.navbar a, .navbar .notation{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    letter-spacing: 10px;
+    color: black;
+    padding: 5px;
+}
+
+.navbar .notation {
+    letter-spacing: 5px;
+}
+
+.about {
+    margin-top: 1rem;
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+}
+
+.about img {
+    background-color: transparent;
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 50%;
+    margin: 10px;
+    margin-bottom: 1rem;
+}
+
+.about .quotes, .about a{
+    margin: auto;
+    width: 90%;
+    background-color: rgba(234, 216, 174, 0.904) ;  
+    font-family: "Pacifico", cursive;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem;
+    font-weight: 500;
+    font-family: "Roboto Mono", monospace;
+    word-wrap: break-word;
+    margin: 1rem;
+}
+.last {
+    margin-bottom: 3rem;
+}
+#space {
+    margin-top: 3rem;
+}
+
+.about .skills {
+    text-align: left;
+    padding-bottom: 0rem;  
+}
+.about span {
+    font-size: x-large;
+    padding-right: 5px;
+    font-family: "Roboto Mono", monospace;
+    text-align: left;
+    text-decoration: underline;
+}
+
+ ul{
+    font-family: inherit;
+    text-align: left;
+    list-style: none;
+}
+
+ul li {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+}
+
+.about a {
+    margin-bottom: 5rem;
+
+}
+
+
+@media (min-width: 768px) {
+    body {
+        padding: 3rem;
+    }
+
+
+    .about .quotes, .about a{
+        margin-bottom: 3rem;
+    }
+
+    p, ul, .about .skills {
+        text-align: center;
+    }
+
+}
+
+
+
